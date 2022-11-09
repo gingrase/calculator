@@ -1,0 +1,94 @@
+body {
+    font-family: "Arial Black";
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+#calculatorFrame {
+    border: 1px solid black;
+    padding: 20px;
+    height: 620px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+    background-color: blanchedalmond;
+}
+
+.logo {
+    height: 40px;
+}
+
+#brand {
+    display: flex;
+    background-color: black;
+    color: silver;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+#model {
+    background-color: DodgerBlue;
+    color: silver;
+    border-top: 5px solid silver;
+    border-bottom: 5px solid silver;
+    padding-left: 10px;
+}
+
+#solar {
+    display: flex;
+    padding: 5px;
+}
+
+.solarCell {
+    background-color: black;
+    border: 1px solid gray;
+    flex-grow: 1;    
+    height: 100%;
+    font-size: 35;
+}
+
+#screen {
+    background-color: sandybrown;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 50;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.screenContainer {
+  
+    background-color: gray;
+    padding: 8px;
+    margin: 12px;
+    border: 1px solid gray;
+}
+
+#buttonContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 25px;
+    border: 1px solid black;
+    padding: 20px;
+    
+}
+
+button {
+    background-color: darkgray;
+    color: white;
+    width: 75px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.topButtons {
+    background-color: DodgerBlue;
+}
+
+#reset {
+    background-color: firebrick;
+}
