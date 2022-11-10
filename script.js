@@ -18,14 +18,22 @@ function calculate (a, b, op) {
             }
     }
     if (result.toString(10).length >= 10) {
-        return "ERROR";
+        const resultSplit = result.toString(10).split(".");
+        if (resultSplit[0].length >= 10) {
+            return "ERROR";
+        } else {
+            const decimalSize = 9 - resultSplit[0].length;
+            return resultSplit[0] + '.' + resultSplit[1].slice(0, decimalSize);
+        } 
     } else {
         return result;
     }
 }
 
 function updateOperand(operand, newDigit) {
-    if ((operand.toString(10).length == 10) || (operand == "ERROR")) {
+    if (operand.toString(10).length == 10) {
+        return operand;
+    } else if (operand == "ERROR") {
         return "ERROR";
     } else if (digitToComeDecimals) {
         digitToComeDecimals = false;
